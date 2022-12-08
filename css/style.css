@@ -1,0 +1,58 @@
+/*
+
+use rem 
+and max-width
+to keep it Fluid and so that making it responsive can be easy afterwards
+
+---Typography:
+
+- FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font Weight : 
+    default: 400
+
+- Line height:
+    default: 1
+
+--- Colors:
+
+Primary : #e67e22
+Shades:
+Accent :
+Tints:
+Greys:
+ #343a40
+
+--- Images :
+from unsplash and uifaces
+use % or vh/vw so that making it responsive can be easy afterwards
+
+
+--- shadows:
+we should be consistent with designs
+
+---Border-Radius:
+
+---whitespace and layout spacing:
+
+- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* to use it liek 1rem = 10px as default browser f-s is 16px and to respect user's browser setting I am using percentage */
+}
+body {
+  color: #343a40;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
