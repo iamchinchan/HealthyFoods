@@ -33,10 +33,10 @@ Accent :
 Tints:#fdf2e9
 #fae5d3
 Greys:
- #343a40
  #555
  #333
  #ccc
+ #888
 
 --- Images :
 from unsplash and uifaces
@@ -47,7 +47,8 @@ use % or vh/vw so that making it responsive can be easy afterwards
 we should be consistent with designs
 
 ---Border-Radius:
-default: 9pm/ .9rem
+default: 9px/ .9rem
+medium: 12px for meal-cards
 
 ---whitespace and layout spacing:
 
@@ -75,10 +76,10 @@ default: 9pm/ .9rem
   grid-template-columns: repeat(2, 1fr);
 }
 .grid--3-cols {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .grid--4-cols {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 .grid--center-v {
   align-items: center;
@@ -105,7 +106,7 @@ default: 9pm/ .9rem
 }
 .heading-tertiary {
   line-height: 1.2;
-  font-size: 3.6rem;
+  font-size: 3rem;
   margin-bottom: 3.2rem;
 }
 .subheading {
@@ -128,7 +129,8 @@ default: 9pm/ .9rem
   font-weight: 600;
 
   /* Animation should be in base "state" */
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
 }
 .btn-full:link,
 .btn-full:visited {
@@ -142,6 +144,7 @@ default: 9pm/ .9rem
 .btn-outline:link,
 .btn-outline:visited {
   background-color: #fff;
+  border: 0.25rem solid #e67e22;
   color: #555;
 }
 .btn-outline:hover,
@@ -149,10 +152,34 @@ default: 9pm/ .9rem
   background-color: #fdf2e9;
   /* border: 3px solid #fff; */
   /* ise box shadow 3px scale */
-  box-shadow: inset 0 0 0 0.3rem #fff;
+  /* box-shadow: inset 0 0 0 0.35rem #fff; */
+  border: 0.25rem solid #fff;
+}
+
+/** link styles **/
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  border-bottom: 1.2px solid currentColor;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+  /* border: none; */
 }
 
 /* helper classes */
 .margin-right-sm {
   margin-right: 3.2rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.center--text {
+  text-align: center;
 }

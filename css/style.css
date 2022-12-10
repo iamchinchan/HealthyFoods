@@ -14,7 +14,9 @@ body {
   line-height: 1;
 }
 
+/* ********************************* */
 /************** Header ***************/
+/* ********************************* */
 .header {
   display: flex;
   align-items: center;
@@ -26,8 +28,9 @@ body {
 .logo-img {
   height: 6.4rem;
 }
-
-/* Navigation */
+/* ********************************* */
+/************** Navigation ***********/
+/* ********************************* */
 
 /* .main-nav {
 } */
@@ -63,10 +66,13 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+/* *************************** */
+/************ Sections***********/
+/* ***************************** */
 
-/*************** sections *************/
-
-/****** Hero section ******/
+/* ****************************** */
+/********** Hero section **********/
+/* ****************************** */
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 8rem 0;
@@ -120,13 +126,49 @@ body {
   font-weight: 700;
 }
 
+/* ****************************** */
+/***** Featured In Section ******/
+/* ****************************** */
+.section-featured {
+  padding: 3.2rem 0 0rem 0;
+}
+.feature-in-heading {
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
+  color: #888;
+  /* color: #cf711f; */
+  text-align: center;
+  margin-bottom: 2.8rem;
+}
+.featured-logos {
+  display: flex;
+  justify-content: space-around;
+  filter: brightness(0);
+  opacity: 50%;
+  margin-bottom: 4.8rem;
+}
+.featured-logos img {
+  height: 3.2rem;
+}
+
+.featured-bar {
+  border: 0;
+  height: 2px;
+  /* color: #e67e22; */
+  background: #e67e22;
+}
+/* ****************************** */
 /***** How it works Section ******/
+/* ****************************** */
 .section-how {
   padding: 9.6rem 0;
 }
 .step-number {
   font-size: 8.6rem;
   color: #ccc;
+  /* color: #cf711f; */
   font-weight: 500;
   margin-bottom: 1.6rem;
 }
@@ -136,7 +178,6 @@ body {
 }
 
 .step-img-box {
-  position: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,4 +208,114 @@ body {
 }
 .step-img {
   width: 40%;
+}
+
+/* ****************************** */
+/***** Meals Section ******/
+/* ****************************** */
+.section-meals {
+  padding: 6.4rem 0 9.6rem 0;
+}
+
+.meals-card {
+  /* if hidden then no need to give upper border radius ti image as well */
+  overflow: hidden;
+  border-radius: 11px;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+}
+.meals-card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+}
+.meal-img {
+  width: 100%;
+  /* border-radius: 9px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; */
+  /* margin-bottom: 1.6rem; */
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 550;
+  text-transform: uppercase;
+  border-radius: 100px;
+}
+.tag--vegetarian {
+  background-color: #51cf60;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+.meal-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.meal-attribute strong {
+  font-weight: 500;
+}
+.meal-icon {
+  color: #e67e22;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+/* Diets card */
+.diets {
+  box-shadow: 0 0 2rem rgba(207, 113, 31, 0.1);
+  box-shadow: inset 0 0 0 0.1rem #cf711f;
+  padding: 1.6rem 0 1.6rem 2.4rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  color: #e67e22;
+  font-size: 3rem;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.all-recipes {
+  font-size: 1.8rem;
+  font-weight: 500;
 }
