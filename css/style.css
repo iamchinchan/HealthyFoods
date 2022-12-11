@@ -296,26 +296,157 @@ body {
   box-shadow: inset 0 0 0 0.1rem #cf711f;
   padding: 1.6rem 0 1.6rem 2.4rem;
 }
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-icon {
-  color: #e67e22;
-  font-size: 3rem;
-}
-.list-item {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  font-size: 1.8rem;
-  line-height: 1.2;
-}
 
 .all-recipes {
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+/* ****************************** */
+/***** Testimonials Section ******/
+/* ****************************** */
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+.testimonial-container {
+  padding: 9.6rem;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+.testimonial-img {
+  width: 8rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+.testimonial-customer {
+  /* color: #777; */
+  color: #6f6f6f;
+  /* font-weight: 450; */
+  font-size: 1.6rem;
+}
+
+.gallery {
+  padding: 1.6rem;
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  display: block;
+  /* as if they are inline then it will show extra spacing in between images */
+  width: 100%;
+  transition: all 0.4s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* ****************************** */
+/***** Pricing Section ******/
+/* ****************************** */
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.pricing-plan {
+  padding: 4.8rem;
+  width: 75%;
+  border-radius: 11px;
+}
+.pricing-plan--starter {
+  justify-self: end;
+  box-shadow: inset 0 0 0 0.2rem #fae5d3;
+  /* box-shadow: 0 0 0 0.2rem #fdf2e9; */
+}
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-plan--complete::after {
+  display: block;
+  padding: 0.8rem 7rem;
+  background-color: #ffd43b;
+  content: "Best Value";
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #333;
+  top: 6%;
+  right: -16%;
+  transform: translate(50%, 50%);
+  transform: rotate(45deg);
+}
+.plan-header {
+  margin-bottom: 4rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  letter-spacing: 0.75;
+}
+.plan-price {
+  color: #333;
+  font-size: 6.2rem;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  margin-right: 0.8rem;
+  font-weight: 500;
+}
+.plan-text {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  line-height: 1.6;
+}
+.plan-sign-up {
+  margin-top: 4rem;
+}
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/******* features styling *******/
+.feature-icon {
+  color: #e67e22;
+  /* width: 2.4rem; */
+  font-size: 3.2rem;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  padding: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.feature-title {
+  margin-bottom: 1.6rem;
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.feature-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
